@@ -1,0 +1,63 @@
+$color-link: #70699f;
+$color-success: #2e804a;
+$color-success-background: #ecfff1;
+$color-pending: #5c5294;
+$color-pending-background: #e7eaf6;
+$color-denial: #d10e18;
+$color-denial-background: #ffeced;
+
+.alert-container {
+	border-left: 6px solid;
+	border-radius: 0.4em;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	margin: 2em auto;
+	max-width: 50em;
+	min-height: 6em;
+	text-align: center;
+	width: 90%;
+	a {
+		color: $color-link;
+		white-space: nowrap;
+	}
+}
+
+.alert-badge {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 0.8em;
+}
+.alert-body {
+	align-items: center;
+	display: flex;
+	padding: 0.8em;
+	text-align: left;
+}
+.alert-body-heading {
+	padding-right: 2em;
+	&.link-confirmation {
+		display: block;
+		margin-bottom: 0.4em;
+	}
+}
+
+.alert-success {
+	background-color: $color-success-background;
+	color: $color-success;
+}
+.alert-pending {
+	background-color: $color-pending-background;
+	color: $color-pending;
+}
+.alert-denial {
+	background-color: $color-denial-background;
+	color: $color-denial;
+}
+
+@media only screen and (max-width: 40em) {
+	.alert-container a {
+		display: block;
+		margin-top: 0.4em;
+	}
+}
